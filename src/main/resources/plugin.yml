@@ -3,5 +3,5 @@ version: '${project.version}'
 main: me.shreyasayyengar.friendsextended.FriendsPlugin
 api-version: 1.17
 prefix: FriendsExtended
-authors: [ ShreyasAyyengar ]
-description: A GUI Friends system with a more functionality (TPA's, msging) 
+author: Shreyas Ayyengar
+description: A GUI 'Friends' plugin with a little more functionality. (TPs, Private Messaging, User Customisability)
