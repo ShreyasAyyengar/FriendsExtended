@@ -1,0 +1,7 @@
+name: FriendsExtended
+version: '${project.version}'
+main: me.shreyasayyengar.friendsextended.FriendsPlugin
+api-version: 1.17
+prefix: FriendsExtended
+authors: [ ShreyasAyyengar ]
+description: A GUI Friends system with a more functionality (TPA's, msging) 
