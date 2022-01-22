@@ -14,3 +14,7 @@ mysql:
 
 system-messages:
   no-perm: "&cYou do not have permission to use this command!"
+  never-joined: "&cThis player is not joined the server yet!"
+  friend-requests-disabled: "&cYou cannot send friend requests to that player!"
+  already-friends: "&6You are already friends with this player!"
+  request-sent: "&aSuccessfully send a friend request to {player}!"

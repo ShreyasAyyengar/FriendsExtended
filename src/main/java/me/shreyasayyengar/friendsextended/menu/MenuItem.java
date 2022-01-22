@@ -1,38 +1,16 @@
 package me.shreyasayyengar.friendsextended.menu;
 
+import me.shreyasayyengar.friendsextended.menu.interfaces.MenuClickCallback;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.NotNull;
 
-public class MenuItem {
-
-    private final ItemStack itemStack;
-    private final MenuClick menuClick;
-
-    /**
-     * Basic Constructor
-     *
-     * @param itemStack {@link ItemStack}
-     */
-    public MenuItem(ItemStack itemStack) {
-        this(itemStack, (player, item, slot) -> {
-        });
-    }
-
-    /**
-     * Basic Constructor
-     *
-     * @param itemStack {@link ItemStack}
-     * @param menuClick {@link MenuClick}
-     */
-    public MenuItem(ItemStack itemStack, MenuClick menuClick) {
-        this.itemStack = itemStack;
-        this.menuClick = menuClick;
-    }
+public record MenuItem(@NotNull ItemStack itemStack, @NotNull MenuClickCallback callback) {
 
     public ItemStack getItemStack() {
         return itemStack;
     }
 
-    public MenuClick getMenuClick() {
-        return menuClick;
+    public MenuClickCallback getCallback() {
+        return callback;
     }
 }
